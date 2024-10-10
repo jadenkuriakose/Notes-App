@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+body.light {
+  background-color: rgb(17, 151, 140);
+  color: black;
+}
+
+body.dark {
+  background-color: rgb(7, 98, 129);
+  color: white;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 250px;
+  height: 100px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease;
+}
+
+.App.dark{
+  background-color: rgb(65,65,65);
+}
+
+.App.light{
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif; 
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.theme-toggle {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+  padding: 10px 30px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1em;
+}
+
+.theme-toggle label:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+.note-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.note-input input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+.note-input button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.note-input button:hover {
+  background-color: #0056b3;
+}
+
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note {
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.5s ease; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.note p {
+  margin: 0;
+  font-size: 1em;
+}
+
+
+.note.light {
+  background-color: white; 
+  color: black;
+}
+
+.note.dark {
+  background-color: #414141; 
+  color: white;
+}
+
+
+.note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.note-actions button {
+  padding: 5px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.note-actions button:hover {
+  background-color: #218838;
+}
+
+.note-actions button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.note-actions button:nth-child(2):hover {
+  background-color: #c82333;
+}
